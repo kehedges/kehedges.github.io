@@ -3,48 +3,63 @@ body {
     padding: 20;
 }
 
-nav {
-    width: 100%;
-    height: 60px;
+.navbar {
+    overflow: hidden;
     background-color: darkgray;
-}
-
-nav ul li {
-    list-style: none;
-    display: in-line-block;
+  }
+  
+  .navbar a {
     float: left;
-    line-height: 60px;   
-}
-
-nav ul li a {
-    display: block;
-    font-family: 'Helvetica', sans serif;
-    color: #ffffff;
     font-size: 16px;
-    text-align: center
-    padding: 22px 14px;
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
     text-decoration: none;
-}
-
-nav ul li ul {
-    display: block;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: blue;
+  }
+  
+  .dropdown-content {
+    display: none;
     position: absolute;
-    background-color: darkgray;
-    padding: 10px;
-}
-
-nav ul li:hover ul {
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-	color: #004aad;
-    background-color: lightsteelblue;
-}
-
-nav ul li ul li {
-    width: 180px;
-}
-
-nav ul li ul li a {
-    padding: 8px 14px;
-}
-
-
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #004aad;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
