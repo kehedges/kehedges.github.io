@@ -9,22 +9,42 @@ nav {
     background-color: darkgray;
 }
 
-ul li {
+nav ul li {
     list-style: none;
     display: in-line-block;
     float: left;
     line-height: 60px;   
 }
 
-ul li a {
-    text-decoration: none;
-    font-size: 16px;
+nav ul li a {
+    display: block;
     font-family: 'Helvetica', sans serif;
-    color: #ffffff;    
-    text-align: center;
-    padding: 0 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center
+    padding: 22px 14px;
+    text-decoration: none;
 }
 
-ul li a:hover {
-    color: #004aad;
+nav ul li ul {
+    display: block;
+    position: absolute;
+    background-color: darkgray;
+    padding: 10px;
 }
+
+nav ul li:hover ul {
+    display: block;
+	color: #004aad;
+    background-color: lightsteelblue;
+}
+
+nav ul li ul li {
+    width: 180px;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+
