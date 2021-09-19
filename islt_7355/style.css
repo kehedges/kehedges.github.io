@@ -1,13 +1,20 @@
 body {
-    background-color:#e7f1fb;
+  background-color:#e7f1fb;
   }
-  
-    h1 {
-    color: #004aad; 
+  h1 {
+  color: darkslateblue; 
   }
-  
-    p {
-    color: #000000; 
+  h2 {
+    color:darkgray
   }
-  
+  p {
+  color: #000000; 
+  }
+  p.intro::first-letter {
+    color: darkslateblue;
+    font-size: xx-large;
+  }
+  div.a {
+    text-indent: 20px;
+  }
   
