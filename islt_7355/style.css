@@ -1,0 +1,65 @@
+body {
+  background-color:#e7f1fb;
+  }
+
+h1 {
+  color: darkslateblue; 
+  }
+
+h2 {
+  color:darkgray;
+  }
+
+h3 {
+  color: darkgray;
+  }
+
+p {
+  color: #000000; 
+  }
+
+p.intro::first-letter {
+  color: darkslateblue;
+  font-size: xx-large;
+  }
+
+div.a {
+  text-indent: 20px;
+  }
+
+header {
+  text-align: center;
+  }
+
+footer {
+  text-align: center;
+  }
+
+
+.flexbox-container {
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexbox-item {
+  width: 255px;
+  margin: 15px;
+  padding: 15px;
+  text-align: left;
+  background-color: lightsteelblue;
+}
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 400px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+
+
