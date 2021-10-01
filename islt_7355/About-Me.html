@@ -4,9 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>About-Me</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="style.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
         <style>
             /*entire page style*/
             * {margin: 0; padding: 0;}
@@ -15,10 +18,9 @@
             /*semantic element styles*/
             header {border-bottom: none;}
             nav {border-bottom: none;}
-            aside {float: left; width: 21%; height: 320px;}            
-            main {float: right; width: 78%; height: 320px;}
+            aside {float: left; width: 21%; height: 400px;}            
+            main {float: right; width: 78%; height: 400px;}
             footer {border-top: none;}
-
 
             /*content styling*/
             h1 {padding: 10px; font-size: 14pt;}
@@ -26,10 +28,12 @@
             /*media queries*/
       
         </style>
-
     </head>
+
     <body>
-    <!-- I tried to change the picture and text sizing, but it keeps getting worse -->        
+    <!--    (1) The footer box is not in the right place 
+            (2) The headshot disappered
+            (3) The video embed does not play and has no image, but the link does -->        
         <header>
             <h1>Keith E. Hedges, AIA</h1>
         </header>
@@ -52,7 +56,14 @@
         </nav>
         
         <aside id="sideB">
-            <br><img src="https://kehedges.github.io/islt_7355/headshot.jpg" alt="headshot" width="100%" height="320">           
+            <p>
+                <img src="https://kehedges.github.io/islt_7355/headshot.jpg" alt="headshot" width="auto" height="auto">           
+            </p>
+                <div class="video-container">
+                    <video width="200" height="150" controls>
+                        <source src="https://kehedges.github.io/islt_7355/Hedges-VideoCV.mp4" type="video/mp4">
+                    </video>
+                </div>      
         </aside>     
                  
         <main>
@@ -63,14 +74,24 @@
                 <br>Do not go where the path may lead, go instead where there is no path and leave a trail. <em>- Ralph Waldo Emerson</em>
             </blockquote> 
             <p><br><a href="https://kehedges.github.io/islt_7355/Hedges-CV.pdf" target="blank">Visit my PDF resume</a></p>  
-            <p><br><a href="https://kehedges.github.io/islt_7355/Hedges-VideoCV.mp4" target="blank">Visit my video resume</a></p>                               
+        
+            <p><br><a href="https://kehedges.github.io/islt_7355/Hedges-VideoCV.mp4" target="blank">Visit my video resume</a></p>
+            <p><br><br><br><br>
+
+            </p>                               
         </main>
 
         <footer>
-            <p><br><br><br>Keith Hedges</p>
-            <p><a href="mailto:khedges@drury.edu">khedges@drury.edu</a></p>
-            <p>Copyright © 2021</p> 
+            <div class="box">
+                <p><br><br>Keith Hedges</p>
+                    <div class="grow">
+                        <p><br><img src="phone.png">  1-417-873-7563</p>
+                        <p><br><img src="email.jpg"><a href="mailto:khedges@drury.edu"> khedges@drury.edu</a></p>          
+                    </div>
+                <p><br>Copyright ©</p>  
+            </div> 
         </footer>
 
     </body>
+    
 </html>
