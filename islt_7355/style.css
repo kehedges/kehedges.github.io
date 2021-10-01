@@ -83,8 +83,19 @@ blockquote {
 }
 
 @media print {
-  nav {
+  nav, aside {
     display: none;
+  }
+  body {
+    color: black;
+    background-color: white;
+    font-family: serif;
+  }
+  h1 {
+    color: black;
+  }
+  p {
+    color: black;
   }
 
 }
