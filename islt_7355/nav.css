@@ -1,0 +1,118 @@
+
+/* [ON BIG SCREENS] */
+/* (A) WRAPPER */
+#hamnav {
+  width: 100%;
+  background: lightgray;
+  /* Optional */
+  position: sticky;
+  top: 0;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+li {display: inline;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { background: #e7f1fb; }
+
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger { display: none; }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-left: 1px solid black;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: darkblue;
+    background: lightsteelblue;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
+
+/* [DOES NOT MATTER] */
+
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    box-sizing: border-box;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Helvetica', sans serif;
+    color: black;
+    text-align: center;
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: dimgray;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    min-width: 40px;
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-size: 14px;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
